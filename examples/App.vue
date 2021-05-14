@@ -47,7 +47,8 @@
         <yh-button type="success" circle :icon="['fas', 'check']"> </yh-button>
         <yh-button type="info" circle :icon="['far', 'envelope']"> </yh-button>
         <yh-button type="warning" circle :icon="['far', 'star']"> </yh-button>
-        <yh-button type="danger" circle :icon="['far', 'trash-alt']"> </yh-button>
+        <yh-button type="danger" circle :icon="['far', 'trash-alt']">
+        </yh-button>
       </div>
       <div class="row">
         <h3>禁用按钮</h3>
@@ -76,11 +77,7 @@
       <yh-button type="primary" @click="dialogVisiable = true"
         >显示对话框</yh-button
       >
-      <yh-dialog
-        title="tip"
-        top="200px"
-        :visiable.sync="dialogVisiable"
-      >
+      <yh-dialog title="tip" top="200px" :visiable.sync="dialogVisiable">
         <template v-slot:title>
           <span>提示</span>
         </template>
@@ -195,7 +192,11 @@
       <h2>复选框</h2>
       <div class="row">
         <h3>基础样式</h3>
-        <yh-checkbox name="read" label="1" v-model="checkboxChoice"></yh-checkbox>
+        <yh-checkbox
+          name="read"
+          label="1"
+          v-model="checkboxChoice"
+        ></yh-checkbox>
       </div>
 
       <div class="row">
@@ -270,8 +271,8 @@ export default {
       form: {
         name: 'honyau',
         email: 'honyau@mail.com',
-        labelwidth: '80px'
-      }
+        labelwidth: '80px',
+      },
     }
   },
   methods: {
@@ -283,8 +284,8 @@ export default {
     },
     handleChange(value) {
       alert(`change switch to ${value}`)
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -21,5 +21,7 @@ module.exports = {
       .tap(options => {
         return options
       })
-  }
+  },
+  // 禁用lint校验
+  lintOnSave: false
 }
