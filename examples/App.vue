@@ -254,6 +254,12 @@
         </yh-form-item>
       </yh-form>
     </div>
+
+    <div class="carousel">
+      <h2>走马灯（轮播图）</h2>
+      <carousel>
+      </carousel>
+    </div>
   </div>
 </template>
 
