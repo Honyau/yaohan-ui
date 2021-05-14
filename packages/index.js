@@ -9,6 +9,7 @@ import Switch from './switch'
 import CheckboxGroup from './checkbox-group'
 import Form from './form'
 import FormItem from './form-item'
+import Carousel from './carousel'
 
 var components = [
   Button,
@@ -20,7 +21,8 @@ var components = [
   Switch,
   CheckboxGroup,
   Form,
-  FormItem
+  FormItem,
+  Carousel
 ]
 
 const install = function(Vue, options) {
@@ -47,6 +49,7 @@ export {
   Switch,
   CheckboxGroup,
   Form,
-  FormItem
+  FormItem,
+  Carousel
 }
 export default { install }
