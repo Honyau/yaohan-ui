@@ -39,36 +39,36 @@ export default {
   methods: {
     closeDialog() {
       this.$emit('update:visiable', false)
-    }
+    },
   },
   components: {},
   props: {
     title: {
       type: String,
-      default: '提示'
+      default: '提示',
     },
     width: {
       type: String,
-      default: '60%'
+      default: '60%',
     },
     top: {
       type: String,
-      default: '15vh'
+      default: '15vh',
     },
     visiable: {
       type: Boolean,
-      default: false
+      default: false,
     },
     mimicry: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   created() {},
   mounted() {},
   computed: {},
 
-  watched: {}
+  watched: {},
 }
 </script>
 <style scoped lang="scss">
@@ -111,29 +111,28 @@ export default {
         }
       }
     }
-    &_body {
-      padding: 30px 20px;
-      color: #606266;
-      font-size: 14px;
-      // CSS 属性 word-break 指定了怎样在单词内断行
-      word-break: break-all;
-    }
-    &_footer {
-      padding: 10px 20px 20px;
-      text-align: right;
-      box-sizing: border-box;
-      //   ::v-deep 相当less中的/deep/
-      ::v-deep .d-button:first-child {
-        margin-right: 20px;
-      }
-    }
+    padding: 30px 20px;
+    color: #606266;
+    font-size: 14px;
+    // CSS 属性 word-break 指定了怎样在单词内断行
+    word-break: break-all;
   }
-  // 拟态风格
-  .d-dialog.is-mimicry {
-    border-radius: 12px;
-    box-shadow: inset 7px 14px 23px #dadada, inset -7px -14px 23px #eeeeee;
+  &_footer {
+    padding: 10px 20px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    //   ::v-deep 相当less中的/deep/
+    ::v-deep .d-button:first-child {
+      margin-right: 20px;
+    }
   }
 }
+// 拟态风格
+.d-dialog.is-mimicry {
+  border-radius: 12px;
+  box-shadow: inset 7px 14px 23px #dadada, inset -7px -14px 23px #eeeeee;
+}
+
 .dialog-fade-enter-active {
   animation: fade 0.5s;
 }

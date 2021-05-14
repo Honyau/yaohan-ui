@@ -257,8 +257,7 @@
 
     <div class="carousel">
       <h2>走马灯（轮播图）</h2>
-      <carousel>
-      </carousel>
+      <yh-carousel></yh-carousel>
     </div>
   </div>
 </template>

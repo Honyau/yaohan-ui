@@ -133,7 +133,8 @@ $danger-active-color: #f78989;
   color: #fff;
   background-color: $primary-color;
   border-color: $primary-color;
-  //   box-shadow: inset 3px 6px 10px #337ecc, inset -3px -7px 10px #4dbeff;
+
+//   box-shadow: inset 3px 6px 10px #337ecc, inset -3px -7px 10px #4dbeff;
   &:hover,
   {
     background: $normal-active-color;

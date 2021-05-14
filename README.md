@@ -226,6 +226,24 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
+### 轮播图(Carousel)
+
+<br>
+
+| 属性                | 值     | 描述                              |
+| ----------|-------| -------------------- |
+| initialSpeed      | Number  | 初始速度，可选                     |
+| initialInterval   | Number  | 图片切换速度（s），可选             |
+| indicator         | Boolean | 切换图片的指示器，可选              |
+| point             | Boolean | 圆点显示，可选                      |
+| imgWidth          | Number  | 图片的宽，默认800px，可选           |
+| sliders           | Array   | 图片数据，可选（不传则显示默认的图片）  |
+| dotsActiveColor   | Boolean | 当前小圆点颜色，可选                |
+| dotsInactiveColor | Boolean | 其他小圆点颜色，可选                |
+
+<br>
+
+
 ---
 
 <br>
